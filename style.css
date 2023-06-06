@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+html, body{
+    width: 100%;
+    height: 100%; 
+    margin: 0px;
+    padding: 0px; 
+    overflow: hidden;
+}
+
+
+li{
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+.me-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.me-image img{
+    width: 70%;
+    height: 40%;
+    border: 2px solid black;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 30px; 
+}
+.name{
+    text-align: center;
+    font-weight: 800;
+    color: black; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.tasks{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    height: 7%;
+}
+
+
+.info{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    height: 15%;
+
+
+}
+
+
+.content {
+    height: 100%;
+    display: flex;
+  }
+
+.aboutme{
+    padding: 20px;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(228, 226, 226);
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.aspects{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 77%;
+    gap: 5px; 
+}
+
+.aspects *{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+
+}
+.projects{
+    background-color: orange; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-size: cover;
+}
+
+.jobs{
+    background-color: darkblue;
+}
+.certifications{
+    background-color: deepskyblue;
+}
+.interests{
+    background-color: orchid;
+}
+.story{
+    background-color: purple;
+}
+.contact{
+    background-color: rgb(102, 157, 21);
+}
+
+
+/*************Contact Page*******************/
+
+.navMenu{
+    width: 100%;
+    background-color: rgb(0, 42, 255);
+    height: 10%;
+}
+
+.nameNav{
+    position: absolute;
+    padding-top: 20px;
+    padding-left: 15px;
+    font-size: 20px;
+    color: white;
+}
+.nameNav a:link, .nameNav a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.pagesNav{
+    display: flex; 
+    justify-content: end;
+    align-items: end;
+    gap:30px;
+    padding-right: 20px; 
+    color: white;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.contentC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+}
+.messageContact{
+    height: 50%;
+    width: 25%;
+}
+
+
+
+.form {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+    border: 1px solid rgb(41, 85, 143);
+  }
+  
+  .form .title {
+    color: royalblue;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+
+  }
+
+  .title{
+    text-align: center;
+  }
+  
+  .form input {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 90%;
+    height: 50px;
+  }
+  
+  .form textarea {
+    border-radius: 8px;
+    height: 100px;
+    width: 90%;
+    resize: none;
+    outline: 0;
+    padding: 8px 14px;
+    border: 1px solid rgb(219, 213, 213);
+    font-family: 'Open Sans', sans-serif;
+
+  }
+  
+  .form button {
+    align-self: flex-end;
+    padding: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    background-color:  rgb(41, 85, 143);
+  }
+
+  .btnSubmit {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid #FF0072;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #FF0072;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+  }
+  
+  .btnSubmit:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #2fff00;
+    border-radius: 8px;
+    z-index: -1;
+  }
+  
+  .btnSubmit:hover, .btnSubmit:focus {
+    color: rgb(0, 0, 0);
+  }
+  
+  .btnSubmit:hover:before, .btnSubmit:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  .btnSubmit:active {
+    transform: scale(0.9);
+  }
+
+  .waveImage{
+    position: absolute;
+    margin-bottom: 37%;
+    height: 20%;
+    width: 100%;
+  }
